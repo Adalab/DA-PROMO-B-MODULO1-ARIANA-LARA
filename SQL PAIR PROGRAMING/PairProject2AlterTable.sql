@@ -1,0 +1,11 @@
+ALTER TABLE Zapatillas
+ADD COLUMN marca VARCHAR (45) NOT NULL,
+ADD COLUMN talla INT NOT NULL;
+ALTER TABLE Empleados
+MODIFY COLUMN salario FLOAT;
+ALTER TABLE Clientes
+DROP COLUMN pais;
+ALTER TABLE Clientes
+MODIFY COLUMN codigo_postal INT(5);
+ALTER TABLE Facturas
+ADD COLUMN total_factura FLOAT;
